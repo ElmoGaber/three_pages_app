@@ -4,10 +4,12 @@ import 'about_page.dart';
 import 'contact_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -15,7 +17,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int _selectedIndex = 0;
 
-  final List<Widget> _pages = [
+  final List<Widget> _pages = const [
     HomePage(),
     AboutPage(),
     ContactPage(),
@@ -31,7 +33,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'My Flutter App',
+      title: 'Three Pages App',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         scaffoldBackgroundColor: Colors.grey[100],

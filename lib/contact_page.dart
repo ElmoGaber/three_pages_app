@@ -12,16 +12,16 @@ class ContactPage extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Icon(Icons.phone, size: 80, color: Colors.deepPurple),
-              const SizedBox(height: 20),
-              const Text(
-                "Contact Us",
+            children: const [
+              Icon(Icons.contact_mail, size: 100, color: Colors.deepPurple),
+              SizedBox(height: 20),
+              Text(
+                "Contact Page",
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.deepPurple),
               ),
-              const SizedBox(height: 10),
-              const Text(
-                "📧 Email: info@flutterapp.com\n📞 Phone: +20 100 123 4567",
+              SizedBox(height: 12),
+              Text(
+                "For inquiries or feedback, reach us at:\nexample@email.com",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Colors.black54),
               ),
